@@ -34,6 +34,8 @@
         "exclude": ["node_modules"] //어떤 node_modules도 설치 x 제외 해놓기
 
 ## 2.FunctionInTS
+-   [변수 선언방법](https://velog.io/@denmark-banana/TypeScript-%EB%B3%80%EC%88%98-%EC%84%A0%EC%96%B8%EA%B3%BC-%EA%B8%B0%EB%B3%B8-%ED%83%80%EC%9E%85)
+-   [타입](https://heecheolman.tistory.com/62?category=793525)
 -   TS에서 함수 선언 방식을 설명한다
 -    ` (숫자 1 옆에) 기호와 ${} 이용하면 문자열 안에서 변수 사용가능
 -    ex) \`${a.name}`
@@ -42,4 +44,9 @@
 -   인터페이스 정의
 
 ## 4.class
--   접근제한자,클래스,생성자,멤버함수,nullable(?) 설명,
+-   [접근제한자](https://heecheolman.tistory.com/65),클래스,생성자,멤버함수,nullable(?) 설명,
+
+
+##  5.Summary(Index.tx)
+-   import 
+-   static method
