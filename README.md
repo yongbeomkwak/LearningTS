@@ -50,3 +50,6 @@
 ##  5.Summary(Index.tx)
 -   import 
 -   static method
+-   typeof 키워드 (타입 확인)
+-   ===(연산자 ==) type script는 3개인듯
+-   crypto-js 사용하여 SHA256 암호화 진행
