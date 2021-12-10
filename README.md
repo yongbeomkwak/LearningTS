@@ -13,15 +13,25 @@
 ##  1.  Setting
 
 ### a) yarn init
-### b) yarn global add typescript
-### c) create tsconfig.json
+### b) (ts설치)
+-   npm install -g typescript
+-   npm link typescript
+### c) yarn add tsc-watch --dev
+-   package.json 에 start 수정
+    -   "start": "tsc-watch --onSuccess \"node dist/index.js\" "
+        -  yarn start 시 dist/index.js를 감시 하는 동작(수정 시마다 재실행)
+### d) create tsconfig.json
 
 -   nodejs를 평범하게 사용하고 다양한걸 import 하거나 export 가능케 해주는 세팅
         
             "compilerOptions": {
         "module": "commonjs", 
         "target": "ES2015", //어떤 버전의 JS로 컴파일 되고싶은 지
-        "sourceMap": true //sourceMap 처리를 하고싶은지
+        "sourceMap": true, //sourceMap 처리를 하고싶은지
+        "outDir": "dist" //컴파일된 js파을 dist 폴더에 생성
         },
-        "include": ["index.ts"], //컴파일 과정에 포함되는 파일들의 배열
+        "include": ["src/**/*"], //컴파일 과정에 포함되는 파일들의 배열 ,src 폴더에 있는 모든 것을 컴파일
         "exclude": ["node_modules"] //어떤 node_modules도 설치 x 제외 해놓기
+
+## 2.FunctionInTS
+-   TS에서 함수 선언 방식을 설명한다
