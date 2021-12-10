@@ -1,0 +1,13 @@
+{
+  "name": "typechain",
+  "version": "1.0.0",
+  "description": "Learning TS by making a BlockChain with it",
+  "main": "index.js",
+  "repository": "https://github.com/yongbeomkwak/LearningTS.git",
+  "author": "yongbeomkwak <yongbeomkwak@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "prestart" : "tsc"
+  }
+}
