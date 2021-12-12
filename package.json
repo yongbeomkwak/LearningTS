@@ -7,7 +7,7 @@
   "author": "yongbeomkwak <yongbeomkwak@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "tsc-watch --onSuccess \" node dist/index.js\" "
+    "start": "tsc-watch --onSuccess \" node dist/typesInTS.js\" "
   },
   "devDependencies": {
     "tsc-watch": "^4.5.0"
