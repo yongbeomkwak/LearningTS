@@ -92,7 +92,7 @@
 
 - nest cli 설치하자
 
-### nest new ./
+### nest n
 
 - 프로젝트 생성
 
