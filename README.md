@@ -81,35 +81,49 @@
 
 # NEST.JS
 
-## 0. Before Install
+## 0. Before Installation
 
 - 노드 설치
 - 타입스크립트 설치
 
-## 1.Install
+## 1.Installation
 
-### npm install -g @nestjs/cli
+### nest cli 설치하자
 
-- nest cli 설치하자
+```bash
+npm install -g @nestjs/cli
+```
 
-### nest n
+### 프로젝트 생성
 
-- 프로젝트 생성
+```bash
+nest n
+```
 
-### npm i class-validator class-transformer
+### 클래스 유효성 확인을 위한 패키지
 
-- 클래스 유효성 확인을 위한 패키지
+```bash
+npm i class-validator class-transformer
+```
 
-  - 예시
+- 예시
 
-    ```ts
-    import { isString } from "class-validator";
-    @IsString();
-    ```
+  ```ts
+  import { isString } from "class-validator";
+  @IsString();
+  ```
 
-## npm i @nestjs/mapped-types
+### DTO 타입을 변환시키고 사용할 수 있게 해주는 패키지
 
-- DTO 타입을 변환시키고 사용할 수 있게 해주는 패키지
+```bash
+npm i @nestjs/mapped-types
+```
+
+### 스웨거 설치
+
+```bash
+npm install --save @nestjs/swagger swagger-ui-express
+```
 
 ## 2.구조
 
