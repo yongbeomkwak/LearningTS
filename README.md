@@ -31,14 +31,22 @@
 ### d) create tsconfig.json
 
 - nodejs를 평범하게 사용하고 다양한걸 import 하거나 export 가능케 해주는 세팅
+
+```json
   "compilerOptions": {
   "module": "commonjs",
-  "target": "ES2015", //어떤 버전의 JS로 컴파일 되고싶은 지
-  "sourceMap": true, //sourceMap 처리를 하고싶은지
-  "outDir": "dist" //컴파일된 js파을 dist 폴더에 생성
+  "target": "ES2015",
+  //어떤 버전의 JS로 컴파일 되고싶은 지
+  "sourceMap": true,
+  //sourceMap 처리를 하고싶은지
+  "outDir": "dist"
+   //컴파일된 js파을 dist 폴더에 생성
   },
-  "include": ["src/**/*"], //컴파일 과정에 포함되는 파일들의 배열 ,src 폴더에 있는 모든 것을 컴파일
-  "exclude": ["node_modules"] //어떤 node_modules도 설치 x 제외 해놓기
+  "include": ["src/**/*"],
+  //컴파일 과정에 포함되는 파일들의 배열 ,src 폴더에 있는 모든 것을 컴파일
+  "exclude": ["node_modules"]
+  //어떤 node_modules도 설치 x 제외 해놓기
+```
 
 ## 2.TypesInTS
 
