@@ -77,77 +77,15 @@
 - ===(연산자 ==) type script는 3개인듯
 - crypto-js 사용하여 SHA256 암호화 진행
 
-<br>
+## 7. Utility Type
 
-# NEST.JS
+- Partial
 
-## 0. Before Installation
+  - 파셜 타입은 특정 타입의 부분 집합을 만족하는 타입을 정의할 수 있습니다.
 
-- 노드 설치
-- 타입스크립트 설치
+- Pick
 
-## 1.Installation
+  - 픽 타입은 특정 타입에서 몇 개의 속성을 선택하여 타입을 정의합니다.
 
-### nest cli 설치하자
-
-```bash
-npm install -g @nestjs/cli
-```
-
-### 프로젝트 생성
-
-```bash
-nest n
-```
-
-### 클래스 유효성 확인을 위한 패키지
-
-```bash
-npm i class-validator class-transformer
-```
-
-- 예시
-
-  ```ts
-  import { isString } from "class-validator";
-  @IsString();
-  ```
-
-### DTO 타입을 변환시키고 사용할 수 있게 해주는 패키지
-
-```bash
-npm i @nestjs/mapped-types
-```
-
-### 스웨거 설치
-
-```bash
-npm install --save @nestjs/swagger swagger-ui-express
-```
-
-## 2.구조
-
-### 0. Module
-
-- 가장 상위에 있음
-- 프로젝트에서 사용하는 모든것을 미리 정의
-- import 역시 이 곳에서
-- 생성 명령어
-  > nest g mo
-
-### 1. Controller
-
-- express의 router 같은 역할
-
-  - url을 당담
-  - 해당 url에 관한 함수를 실행 담당
-
-- 생성 명령어
-  > nest g co
-
-### 2. Service
-
-- 맵핑된 컨틀롤러의 실제 동작 내용
-
-- 생성 명령어
-  > nest g s
+- Omit
+  - 특정 속성만 제거한 타입을 정의합니다. pick의 반대
